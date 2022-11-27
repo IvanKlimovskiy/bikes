@@ -1,0 +1,40 @@
+.cyclist-quote {
+  box-sizing: border-box;
+  width: 100%;
+  display: flex;
+  max-width: 1440px;
+  padding: 120px 120px 60px;
+
+  &__image {
+    max-width: 100%;
+  }
+
+  &__quote-box {
+    margin: 0;
+  }
+
+  &__quote {
+    margin: 0 0 0 80px;
+    font-weight: $font-weight-semi-bold;
+    font-size: $font-size-article;
+    line-height: $font-height-article;
+    max-width: 470px;
+  }
+
+  &__author {
+    margin: 262px 0 0 80px;
+  }
+
+  &__name {
+    margin: 0;
+    @include font-header;
+    font-size: 20px;
+    line-height: 32px;
+  }
+
+  &__profession {
+    margin: 6px 0 0;
+    @include font-text;
+    font-size: 16px;
+  }
+}
