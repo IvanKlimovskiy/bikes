@@ -1,0 +1,64 @@
+.welcome-page {
+  max-width: calc(1440px - 120px);
+  padding: 94px 0 0 120px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  &__info {
+    width: 100%;
+  }
+  &__image {
+    width: 100%;
+  }
+  &__title {
+    margin: 60px 0 0;
+    @include font-title;
+    max-width: 460px;
+  }
+  &__subtitle {
+    @include font-text;
+    max-width: 460px;
+    margin: 50px 0 0;
+  }
+  &__button-about {
+    margin: 50px 0 0;
+    cursor: pointer;
+    letter-spacing: 1px;
+    border: none;
+    border-radius: 4px;
+    display: block;
+    background-color: $color-button;
+    padding: 16px 46.6px;
+    @include font-header;
+    color: white;
+  }
+  &__bike-name {
+    @include font-text;
+    display: block;
+    line-height: $font-height-heading;
+    margin: 167px 0 0;
+    position: relative;
+    &::after {
+      position: absolute;
+      top: -4px;
+      content: url('../../../images/line.svg');
+      margin-left: 30px;
+    }
+  }
+  &__images {
+    position: relative;
+  }
+  &__fixed-bike-picture-wrapper {
+    height: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 52px;
+    left: -420px;
+  }
+  &__fixed-bike-picture {
+    position: sticky;
+    top: 100px;
+    border-radius: 20px;
+  }
+}
