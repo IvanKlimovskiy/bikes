@@ -1,0 +1,30 @@
+.bikes-description {
+  padding: 60px 0 0 120px;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 1440px;
+
+  &__title {
+    margin: 0;
+    @include font-title;
+  }
+
+  &__text {
+    margin: 50px 0 0;
+    max-width: 460px;
+    @include font-text;
+  }
+
+  &__images-wrapper {
+    margin: 80px 0 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 18px;
+  }
+
+  &__image {
+    width: 100%;
+    height: 100%;
+    max-height: 400px;
+  }
+}
