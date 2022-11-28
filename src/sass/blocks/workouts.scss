@@ -1,0 +1,38 @@
+.workouts {
+  width: 100%;
+  max-width: 1440px;
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 150px 120px 120px;
+
+  &__text-box {
+    padding-right: 160px;
+  }
+
+  &__title {
+    margin: 0;
+    @include font-title;
+  }
+
+  &__text {
+    margin: 50px 0 0;
+    @include font-text;
+  }
+
+  &__links {
+    display: flex;
+    gap: 30px;
+    margin-top: 182px;
+  }
+
+  &__link {
+    display: block;
+    text-decoration: none;
+    @include font-link;
+    transition: .3s;
+    &:hover {
+      opacity: .75;
+    }
+  }
+}

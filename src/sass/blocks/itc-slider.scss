@@ -4,10 +4,15 @@
       bottom: 480px;
       justify-content: flex-end;
       margin: 0;
+      @include font-link;
+      font-weight: $font-weight-regular;
     }
   }
   &__indicator {
     &_size_big {
+      display: flex;
+      align-items: center;
+      justify-content: center;
       margin-right: 40px;
       width: 59px;
       height: 28px;
@@ -24,7 +29,7 @@
     }
     &_active {
       background: none;
-      font-weight: $font-weight-semi-bold;
+      @include font-link;
       opacity: 1;
       &:hover {
         opacity: 1;
