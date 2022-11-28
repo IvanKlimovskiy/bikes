@@ -1,0 +1,34 @@
+.itc-slider {
+  &__indicators {
+    &_position_static {
+      bottom: 480px;
+      justify-content: flex-end;
+      margin: 0;
+    }
+  }
+  &__indicator {
+    &_size_big {
+      margin-right: 40px;
+      width: 59px;
+      height: 28px;
+      text-indent: 0;
+      background: none;
+      border: none;
+      opacity: .7;
+      &:hover {
+        opacity: .6;
+      }
+    }
+    &_size_big:last-child {
+      margin: 0;
+    }
+    &_active {
+      background: none;
+      font-weight: $font-weight-semi-bold;
+      opacity: 1;
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
+}

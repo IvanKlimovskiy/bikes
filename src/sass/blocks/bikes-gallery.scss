@@ -1,0 +1,28 @@
+.bikes-gallery {
+  max-width: 1440px;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 60px 120px;
+  &__bikes-card {
+    margin: 0;
+    text-align: center;
+  }
+  &__title {
+    margin: 0 0 120px;
+    @include font-title;
+  }
+  &__images-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 30px
+  }
+  &__name {
+    @include font-text;
+    font-weight: $font-weight-semi-bold;
+    line-height: 22px;
+    text-align: left;
+  }
+  &__image {
+    border-radius: 20px;
+  }
+}
