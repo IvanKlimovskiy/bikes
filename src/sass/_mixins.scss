@@ -18,3 +18,10 @@
   line-height: $font-height-text;
   color: $color-subtitle;
 }
+
+@mixin font-link {
+  font-weight: $font-weight-semi-bold;
+  font-size: $font-size-text;
+  line-height: $font-height-text;
+  color: $color-title;
+}
