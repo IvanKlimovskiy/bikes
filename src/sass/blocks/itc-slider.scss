@@ -8,6 +8,7 @@
       font-weight: $font-weight-regular;
     }
   }
+
   &__indicator {
     &_size_big {
       display: flex;
@@ -20,17 +21,21 @@
       background: none;
       border: none;
       opacity: .7;
+
       &:hover {
         opacity: .6;
       }
     }
+
     &_size_big:last-child {
       margin: 0;
     }
+
     &_active {
       background: none;
       @include font-link;
       opacity: 1;
+
       &:hover {
         opacity: 1;
       }

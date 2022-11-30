@@ -31,6 +31,7 @@
     text-decoration: none;
     @include font-link;
     transition: .3s;
+
     &:hover {
       opacity: .75;
     }

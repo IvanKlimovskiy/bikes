@@ -1,11 +1,13 @@
 // Colors
-$color-background:#f4f4f4;
+$color-background: #f4f4f4;
+$color-background-footer: #EFEFEF;
 $color-title: #151515;
 $color-subtitle: #222222;
 $color-grey-text: #EBEBEB;
 $color-grey-footer-text: #CFCFCF;
 $color-button: #24B47E;
 $color-hover-button: #319E75;
+$color-dark-mode: #545454;
 // font-weights
 $font-weight-regular: 400;
 $font-weight-medium: 500;
@@ -13,11 +15,17 @@ $font-weight-semi-bold: 600;
 $font-weight-bold: 700;
 // font sizes
 $font-size-heading: 14px;
+$font-size-footer: 24px;
 $font-size-text: 18px;
+$font-size-text-mobile: 12px;
 $font-size-title: 55px;
+$font-size-title-mobile: 32px;
 $font-size-article: 34px;
 // line-heights
 $font-height-heading: 18px;
+$font-height-footer: 32px;
 $font-height-text: 28px;
+$font-height-text-mobile: 18px;
 $font-height-title: 60px;
+$font-height-title-mobile: 40px;
 $font-height-article: 44px;

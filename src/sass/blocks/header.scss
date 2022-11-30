@@ -1,10 +1,11 @@
 .header {
   box-sizing: border-box;
   max-width: 1440px;
+  padding: 28px 120px 28px 0;
   background-color: $color-background;
   position: fixed;
   width: 100%;
   display: flex;
   justify-content: flex-end;
-  z-index: 1;
+  z-index: 3;
 }
