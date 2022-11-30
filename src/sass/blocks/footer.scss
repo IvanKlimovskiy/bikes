@@ -1,0 +1,134 @@
+.footer {
+  box-sizing: border-box;
+  max-width: 1440px;
+  width: 100%;
+  padding: 80px 0 60px 120px;
+  background-color: $color-background-footer;
+
+  &__title {
+    @include font-footer;
+    max-width: 229px;
+  }
+
+  &__form {
+    display: flex;
+    border: 1px solid rgba(#C7C7C7, .5);
+    max-width: 360px;
+    max-height: 50px;
+    justify-content: space-between;
+    border-radius: 4px;
+
+    &:focus-within {
+      border: 1px solid rgba(#C7C7C7, 1);
+    }
+  }
+
+  &__input-email {
+    width: 100%;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 28px;
+    border-radius: 4px;
+    box-sizing: border-box;
+    padding: 10px 0 10px 20px;
+    border: none;
+    background-color: $color-background-footer;
+    outline: none;
+    display: block;
+    margin: 0;
+
+    &:focus~.footer__submit-button {
+      display: block;
+    }
+
+    &:focus::placeholder {
+      visibility: hidden;
+    }
+
+    &::placeholder {
+      opacity: .7;
+    }
+
+    &:hover::placeholder {
+      color: $color-title;
+      opacity: 1;
+    }
+  }
+
+  &__submit-button {
+    display: none;
+    border: none;
+    margin: 0 22px 0 0;
+    padding: 0;
+  }
+
+  &__copyright-switcher-wrapper {
+    margin: 100px 0 0;
+    max-width: 1200px;
+    width: 100%;
+    justify-content: space-between;
+    display: flex;
+  }
+
+  &__copyright {
+    margin: 0;
+    font-size: $font-size-heading;
+    font-weight: $font-weight-semi-bold;
+    color: $color-grey-footer-text;
+    line-height: 19.6px;
+  }
+
+  &__switcher {
+    display: flex;
+    max-width: 136px;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__switcher-light {
+    display: block;
+  }
+
+  &__checkbox {
+    display: block;
+
+    &[type="checkbox"] {
+      cursor: pointer;
+      position: relative;
+      width: 44px;
+      height: 24px;
+      appearance: none;
+      -webkit-appearance: none;
+      background: #fff;
+      outline: none;
+      border-radius: 20px;
+      transition: .5s;
+    }
+
+    &:checked[type="checkbox"] {
+      background: $color-dark-mode;
+    }
+
+    &[type="checkbox"]::before {
+      content: "";
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      top: 2px;
+      left: 2px;
+      background: $color-button;
+      transition: .5s;
+    }
+
+    &:checked[type="checkbox"]::before {
+      left: 22px;
+    }
+  }
+
+  &__switcher-dark {
+    display: block;
+  }
+}

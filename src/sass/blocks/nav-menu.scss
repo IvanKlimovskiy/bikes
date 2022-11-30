@@ -1,7 +1,7 @@
 .nav-menu {
   max-width: 399px;
   width: 100%;
-  padding: 28px 120px 28px 0;
+
   &__list {
     list-style: none;
     display: flex;
@@ -9,8 +9,14 @@
     margin: 0;
     padding: 0;
   }
+
   &__link {
     text-decoration: none;
     @include font-header;
+    transition: .5s;
+
+    &:hover {
+      opacity: .75;
+    }
   }
 }
