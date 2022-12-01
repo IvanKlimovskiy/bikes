@@ -12,12 +12,19 @@
 <body class="root">
   <div class="page">
     <header class="header">
+      <div class="header__burger-menu"></div>
       <nav class="nav-menu">
+        <button class="nav-menu__close-button"></button>
         <ul class="nav-menu__list">
           <li><a href="#" class="nav-menu__link">Покрытия и градиенты</a></li>
           <li><a href="#" class="nav-menu__link">Велосипеды</a></li>
           <li><a href="#" class="nav-menu__link">Тренировки</a></li>
         </ul>
+        <div class="switcher switcher_visibility_visible">
+          <img src="./images/light.svg" alt="Значок светлой темы" class="switcher__light">
+          <input class="switcher__checkbox" type="checkbox">
+          <img src="./images/dark.svg" alt="Значок тёмной темы" class="switcher__dark">
+        </div>
       </nav>
     </header>
     <main class="content">
@@ -44,7 +51,7 @@
           </div>
         </div>
       </section>
-      <!-- <article class="cyclist-quote">
+      <article class="cyclist-quote">
         <img src="./images/quote-pic.jpg" alt="Картинка в блоке цитаты" class="cyclist-quote__image">
         <figure class="cyclist-quote__quote-box">
           <blockquote class="cyclist-quote__quote">«Катайся много или мало, долго или коротко, как хочешь - но катайся»
@@ -206,15 +213,16 @@
       </form>
       <div class="footer__copyright-switcher-wrapper">
         <p class="footer__copyright">© Road Club 2021</p>
-        <div class="footer__switcher">
-          <img src="./images/light.svg" alt="Значок светлой темы" class="footer__switcher-light">
-          <input class="footer__checkbox" type="checkbox">
-          <img src="./images/dark.svg" alt="Значок тёмной темы" class="footer__switcher-dark">
+        <div class="switcher">
+          <img src="./images/light.svg" alt="Значок светлой темы" class="switcher__light">
+          <input class="switcher__checkbox" type="checkbox">
+          <img src="./images/dark.svg" alt="Значок тёмной темы" class="switcher__dark">
         </div>
       </div>
     </footer>
   </div>
-  <script src="./vendor/slider/slider.js"></script> -->
+  <script src="./vendor/slider/slider.js"></script>
+  <script src="./src/scripts/script.js"></script>
 </body>
 
 </html>
