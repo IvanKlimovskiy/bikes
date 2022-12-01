@@ -5,8 +5,26 @@
   max-width: 1440px;
   padding: 120px 120px 60px;
 
+  @media (max-width: 1162px) {
+    display: block;
+  }
+
+  @media (max-width: 900px) {
+    padding: 60px 18px 40px;
+  }
+
   &__image {
     max-width: 100%;
+
+    @media (max-width: 1162px) {
+      width: 100%;
+      max-width: none;
+    }
+
+    @media (max-width: 494px) {
+      margin-top: 20px;
+    }
+
   }
 
   &__quote-box {
@@ -19,10 +37,34 @@
     font-size: $font-size-article;
     line-height: $font-height-article;
     max-width: 470px;
+
+    @media (max-width: 1253px) {
+      margin: 0 0 0 40px;
+      font-size: 28px;
+    }
+
+    @media (max-width: 1162px) {
+      width: 100%;
+      max-width: none;
+      margin: 40px 0 0;
+    }
+
+    @media (max-width: 494px) {
+      font-size: 23px;
+      line-height: 29px;
+    }
   }
 
   &__author {
     margin: 262px 0 0 80px;
+
+    @media (max-width: 1253px) {
+      margin: 262px 0 0 40px;
+    }
+
+    @media (max-width: 1162px) {
+      margin: 40px 0 0;
+    }
   }
 
   &__name {
@@ -30,11 +72,29 @@
     @include font-header;
     font-size: 20px;
     line-height: 32px;
+
+    @media (max-width: 1253px) {
+      font-size: 18px;
+    }
+
+    @media (max-width: 494px) {
+      font-size: 14px;
+      line-height: 22px;
+    }
   }
 
   &__profession {
     margin: 6px 0 0;
     @include font-text;
     font-size: 16px;
+
+    @media (max-width: 1253px) {
+      font-size: 14px;
+    }
+
+    @media (max-width: 494px) {
+      font-size: 10px;
+      line-height: 16px;
+    }
   }
 }
