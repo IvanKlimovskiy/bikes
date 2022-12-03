@@ -14,6 +14,12 @@
     }
   }
 
+  &_visibility_hidden {
+    @media (max-width: 640px) {
+      display: none;
+    }
+  }
+
   &__light {
     display: block;
   }

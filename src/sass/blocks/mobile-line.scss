@@ -5,4 +5,8 @@
   @media (max-width: 494px) {
     display: block;
   }
+
+  &_position_top {
+    grid-row: 1;
+  }
 }
