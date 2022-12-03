@@ -20,6 +20,10 @@
     @media (max-width: 690px) {
       @include font-title-mobile;
     }
+
+    &_theme_dark {
+      color: #fff;
+    }
   }
 
   &__text {
@@ -37,6 +41,10 @@
         margin: 40px 0 0;
         max-width: none;
       }
+    }
+
+    &_theme_dark {
+      color: #E5E5E5;
     }
   }
 

@@ -59,6 +59,10 @@
         display: none;
       }
     }
+
+    &_theme_dark {
+      color: #fff;
+    }
   }
 
   &__subtitle {
@@ -72,6 +76,10 @@
 
     @media (max-width: 1040px) {
       @include font-text-mobile;
+    }
+
+    &_theme_dark {
+      color: #E6E6E6;
     }
   }
 
@@ -150,6 +158,14 @@
     @media (max-width: 1040px) {
       display: none;
     }
+
+    &_theme_dark {
+      color: #fff;
+
+      &::after {
+        content: url('../../../images/line-dark.svg');
+      }
+    }
   }
 
   &__images {
@@ -208,7 +224,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    top: 130px;
+    top: 300px;
     position: sticky;
 
     @media (max-width: 640px) {

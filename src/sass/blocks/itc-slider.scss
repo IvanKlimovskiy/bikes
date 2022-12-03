@@ -62,6 +62,22 @@
         height: 24px;
       }
     }
+
+    &_prev {
+      &_theme_dark {
+        &::before {
+          background-image: url('../../../images/arrow-left-dark.svg');
+        }
+      }
+    }
+
+    &_next {
+      &_theme_dark {
+        &::before {
+          background-image: url('../../../images/arrow-right-dark.svg');
+        }
+      }
+    }
   }
 
   &__indicator {
@@ -81,6 +97,9 @@
         opacity: .6;
       }
 
+      &_theme_dark {
+        color: #E5E5E5;
+      }
     }
 
     &_position_top:last-child {
@@ -94,22 +113,6 @@
 
       &:hover {
         opacity: 1;
-      }
-
-      @media (max-width: 540px) {
-        background-color: $color-background;
-      }
-
-    }
-
-    &_position_bottom {
-      display: none;
-      @media (max-width: 540px) {
-        display: block;
-        background-color: #CACACA;
-        width: 4px;
-        height: 3px;
-        border-radius: 50%;
       }
     }
   }

@@ -2,7 +2,7 @@
   box-sizing: border-box;
   max-width: 1440px;
   padding: 28px 120px 28px 0;
-  background-color: $color-background;
+  background-color: inherit;
   position: fixed;
   width: 100%;
   display: flex;
@@ -27,6 +27,12 @@
 
     @media (max-width: 640px) {
       display: block;
+    }
+
+    &_theme_dark {
+      &::after {
+        content: url('../../../images/burger-menu-dark-theme.svg');
+      }
     }
   }
 }

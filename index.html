@@ -14,15 +14,17 @@
     <header class="header">
       <div class="header__burger-menu"></div>
       <nav class="nav-menu">
-        <button type="button" class="nav-menu__close-button"></button>
+        <button type="button" class="nav-menu__close-button nav-menu__close-button_theme_dark"></button>
         <ul class="nav-menu__list">
-          <li><a href="#" class="nav-menu__link">Покрытия и градиенты</a></li>
-          <li><a href="#" class="nav-menu__link">Велосипеды</a></li>
-          <li><a href="#" class="nav-menu__link">Тренировки</a></li>
+          <li><a href="#bikes-description" class="nav-menu__link">Покрытия и градиенты</a></li>
+          <li><a href="#bikes-gallery" class="nav-menu__link">Велосипеды</a></li>
+          <li><a href="#workouts" class="nav-menu__link">Тренировки</a></li>
         </ul>
         <div class="switcher switcher_visibility_visible">
           <img src="./images/light.svg" alt="Значок светлой темы" class="switcher__light">
-          <input class="switcher__checkbox" type="checkbox">
+          <label for="checkbox-header">
+            <input class="switcher__checkbox" id="checkbox-header" type="checkbox">
+          </label>
           <img src="./images/dark.svg" alt="Значок тёмной темы" class="switcher__dark">
         </div>
       </nav>
@@ -63,7 +65,7 @@
           </figcaption>
         </figure>
       </article>
-      <section class="bikes-description">
+      <section class="bikes-description" id="bikes-description">
         <div class="mobile-line"></div>
         <div class="itc-slider itc-slider_space_top" data-slider="itc-slider">
           <div class="itc-slider__wrapper">
@@ -129,7 +131,7 @@
           </div>
         </div>
       </section>
-      <section class="bikes-gallery">
+      <section class="bikes-gallery" id="bikes-gallery">
         <div class="itc-slider" data-slider="itc-slider">
           <div class="bikes-gallery__indicators-title-wrapper">
             <h2 class="bikes-gallery__title">Велосипеды</h2>
@@ -145,23 +147,25 @@
                 <div class="bikes-gallery__images-wrapper">
                   <a target="_blank" class="bikes-gallery__bikes-card-link"
                     href="https://www.sigmasports.com/item/Cervelo/Caledonia-5-Ultegra-Disc-Road-Bike-2021/RDEN">
-                    <figure class="bikes-gallery__bikes-card">  
-                      <div class="bikes-gallery__image-wrapper"><img class="bikes-gallery__image" src="./images/highway-bike1.jpg" alt="Cervelo Caledonia-5"></div>
+                    <figure class="bikes-gallery__bikes-card">
+                      <div class="bikes-gallery__image-wrapper"><img class="bikes-gallery__image"
+                          src="./images/highway-bike1.jpg" alt="Cervelo Caledonia-5"></div>
                       <figcaption class="bikes-gallery__name">Cervelo Caledonia-5</figcaption>
                     </figure>
                   </a>
                   <a target="_blank" class="bikes-gallery__bikes-card-link"
                     href="https://www.sigmasports.com/item/Cannondale/SystemSix-HiMOD-Ultegra-Di2-Disc-Road-Bike-2021/R82J">
                     <figure class="bikes-gallery__bikes-card">
-                      <div class="bikes-gallery__image-wrapper"><img class="bikes-gallery__image" src="./images/highway-bike2.jpg"
-                        alt="Cannondale Systemsix Himod"></div>
+                      <div class="bikes-gallery__image-wrapper"><img class="bikes-gallery__image"
+                          src="./images/highway-bike2.jpg" alt="Cannondale Systemsix Himod"></div>
                       <figcaption class="bikes-gallery__name">Cannondale Systemsix Himod</figcaption>
                     </figure>
                   </a>
                   <a target="_blank" class="bikes-gallery__bikes-card-link"
                     href=" https://www.sigmasports.com/item/Trek/Domane-SL-7-Force-eTap-AXS-Disc-Road-Bike-2021/RULF">
                     <figure class="bikes-gallery__bikes-card">
-                      <div class="bikes-gallery__image-wrapper"><img class="bikes-gallery__image" src="./images/highway-bike3.jpg" alt="Trek Domane SL-7"></div>
+                      <div class="bikes-gallery__image-wrapper"><img class="bikes-gallery__image"
+                          src="./images/highway-bike3.jpg" alt="Trek Domane SL-7"></div>
                       <figcaption class="bikes-gallery__name">Trek Domane SL-7</figcaption>
                     </figure>
                   </a>
@@ -172,23 +176,24 @@
                   <a target="_blank" class="bikes-gallery__bikes-card-link"
                     href="https://www.sigmasports.com/item/Cervelo/Aspero-GRX-810-1x-Disc-Gravel-Bike-2021/RJDE">
                     <figure class="bikes-gallery__bikes-card">
-                      <div class="bikes-gallery__image-wrapper"><img class="bikes-gallery__image" src="./images/gravel-bike1.jpg" alt="Cervelo Aspero GRX 810"></div>
+                      <div class="bikes-gallery__image-wrapper"><img class="bikes-gallery__image"
+                          src="./images/gravel-bike1.jpg" alt="Cervelo Aspero GRX 810"></div>
                       <figcaption class="bikes-gallery__name">Cervelo Aspero GRX 810</figcaption>
                     </figure>
                   </a>
                   <a target="_blank" class="bikes-gallery__bikes-card-link"
                     href="https://www.sigmasports.com/item/Specialized/S-Works-Diverge-Gravel-Bike-2020/NVJ9">
                     <figure class="bikes-gallery__bikes-card">
-                      <div class="bikes-gallery__image-wrapper"><img class="bikes-gallery__image" src="./images/gravel-bike2.jpg"
-                        alt="Specialized S-Works Diverge"></div>
+                      <div class="bikes-gallery__image-wrapper"><img class="bikes-gallery__image"
+                          src="./images/gravel-bike2.jpg" alt="Specialized S-Works Diverge"></div>
                       <figcaption class="bikes-gallery__name">Specialized S-Works Diverge</figcaption>
                     </figure>
                   </a>
                   <a target="_blank" class="bikes-gallery__bikes-card-link"
                     href="https://www.sigmasports.com/item/Cannondale/Topstone-Carbon-Lefty-3-Disc-Gravel-Road-Bike-2021/PUC8">
                     <figure class="bikes-gallery__bikes-card">
-                      <div class="bikes-gallery__image-wrapper"><img class="bikes-gallery__image" src="./images/gravel-bike3.jpg"
-                        alt="Cannondale Topstone Lefty 3"></div>
+                      <div class="bikes-gallery__image-wrapper"><img class="bikes-gallery__image"
+                          src="./images/gravel-bike3.jpg" alt="Cannondale Topstone Lefty 3"></div>
                       <figcaption class="bikes-gallery__name">Cannondale Topstone Lefty 3</figcaption>
                     </figure>
                   </a>
@@ -199,21 +204,24 @@
                   <a target="_blank" class="bikes-gallery__bikes-card-link"
                     href="https://www.sigmasports.com/item/Specialized/S-Works-Shiv-Disc-Limited-Edition-Triathlon-Bike-2019/K8P9">
                     <figure class="bikes-gallery__bikes-card">
-                      <div class="bikes-gallery__image-wrapper"><img class="bikes-gallery__image" src="./images/TT-bike1.jpg" alt="Specialized S-Works Shiv"></div>
+                      <div class="bikes-gallery__image-wrapper"><img class="bikes-gallery__image"
+                          src="./images/TT-bike1.jpg" alt="Specialized S-Works Shiv"></div>
                       <figcaption class="bikes-gallery__name">Specialized S-Works Shiv</figcaption>
                     </figure>
                   </a>
                   <a target="_blank" class="bikes-gallery__bikes-card-link"
                     href=" https://www.sigmasports.com/item/BMC/Timemachine-01-One-Force-Disc-TT-Triathlon-Bike-2021/S835">
                     <figure class="bikes-gallery__bikes-card">
-                      <div class="bikes-gallery__image-wrapper"><img class="bikes-gallery__image" src="./images/TT-bike2.jpg" alt="BMC Timemachine 01 ONE"></div>
+                      <div class="bikes-gallery__image-wrapper"><img class="bikes-gallery__image"
+                          src="./images/TT-bike2.jpg" alt="BMC Timemachine 01 ONE"></div>
                       <figcaption class="bikes-gallery__name">BMC Timemachine 01 ONE</figcaption>
                     </figure>
                   </a>
                   <a target="_blank" class="bikes-gallery__bikes-card-link"
                     href="https://www.sigmasports.com/item/Cervelo/P-Series-Ultegra-Di2-TT-Triathlon-Bike-2021/RM6Q">
                     <figure class="bikes-gallery__bikes-card">
-                      <div class="bikes-gallery__image-wrapper"><img class="bikes-gallery__image" src="./images/TT-bike3.jpg" alt="Cervelo P-Series"></div>
+                      <div class="bikes-gallery__image-wrapper"><img class="bikes-gallery__image"
+                          src="./images/TT-bike3.jpg" alt="Cervelo P-Series"></div>
                       <figcaption class="bikes-gallery__name">Cervelo P-Series</figcaption>
                     </figure>
                   </a>
@@ -223,7 +231,7 @@
           </div>
         </div>
       </section>
-       <section class="workouts">
+      <section class="workouts" id="workouts">
         <div class="mobile-line mobile-line_position_top"></div>
         <h2 class="workouts__title workouts__title_display_mobile">Тренировки</h2>
         <div class="workouts__text-box">
@@ -248,13 +256,15 @@
         <p class="footer__copyright">© Road Club 2021</p>
         <div class="switcher switcher_visibility_hidden">
           <img src="./images/light.svg" alt="Значок светлой темы" class="switcher__light">
-          <input class="switcher__checkbox" type="checkbox">
+          <label for="checkbox-footer">
+            <input class="switcher__checkbox" id="checkbox-footer" type="checkbox">
+          </label>
           <img src="./images/dark.svg" alt="Значок тёмной темы" class="switcher__dark">
         </div>
         <img src="./images/logo.svg" alt="Логотип" class="logo">
       </div>
-    </footer> 
-   </div>
+    </footer>
+  </div>
   <script src="./vendor/slider/slider.js"></script>
   <script src="./src/scripts/script.js"></script>
 </body>

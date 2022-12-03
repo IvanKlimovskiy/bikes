@@ -13,6 +13,10 @@
     top: 0;
     right: -100%;
     transition: .5s;
+
+    &_theme_dark {
+      background-color: $color-background-dark;
+    }
   }
 
   &__close-button {
@@ -29,6 +33,10 @@
       padding: 0;
       margin: 19px 14px 24px 0;
       align-self: flex-end;
+    }
+
+    &_theme_dark {
+      background-image: url('../../../images/close-button-dark-theme.svg');
     }
   }
 
@@ -60,5 +68,11 @@
     &:hover {
       opacity: .75;
     }
+
+    &_theme_dark {
+      color: #fff;
+    }
   }
+
+
 }
