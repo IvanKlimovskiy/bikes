@@ -1,0 +1,249 @@
+.welcome-page {
+  box-sizing: border-box;
+  max-width: 1440px;
+  width: 100%;
+  padding: 94px 0 0 120px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  @media (max-width: 1040px) {
+    grid-template-columns: 1fr;
+  }
+
+  @media (max-width: 640px) {
+    padding: 40px 18px;
+  }
+
+  &__info {
+    width: 100%;
+
+    @media (max-width: 1040px) {
+      grid-row: 3;
+    }
+  }
+
+  &__image {
+    z-index: 1;
+    width: 100%;
+    object-fit: cover;
+
+    @media (max-width: 1040px) {
+      grid-row: 2;
+      margin-top: 40px;
+    }
+  }
+
+  &__title {
+    margin: 60px 0 0;
+    @include font-title;
+    max-width: 460px;
+
+    @media (max-width: 494px) {
+      @include font-title-mobile;
+      max-width: 284px;
+      margin: 40px 0 0;
+    }
+
+    &_visibility_hidden {
+      display: none;
+
+      @media (max-width: 1040px) {
+        display: block;
+      }
+    }
+
+    &_visibility_visible {
+      display: block;
+
+      @media (max-width: 1040px) {
+        display: none;
+      }
+    }
+
+    &_theme_dark {
+      color: #fff;
+    }
+  }
+
+  &__subtitle {
+    @include font-text;
+    max-width: 460px;
+    margin: 50px 0 0;
+
+    @media (max-width: 1040px) {
+      max-width: 100%;
+    }
+
+    @media (max-width: 1040px) {
+      @include font-text-mobile;
+    }
+
+    &_theme_dark {
+      color: #E6E6E6;
+    }
+  }
+
+  &__button-about {
+    padding: 0;
+    width: 180px;
+    height: 50px;
+    overflow: hidden;
+    position: relative;
+    margin: 50px 0 0;
+    cursor: pointer;
+    letter-spacing: 1px;
+    border: none;
+    border-radius: 4px;
+    display: block;
+    background-color: $color-button;
+
+    @media (max-width: 494px) {
+      width: 100%;
+    }
+
+    &::after {
+      top: 16px;
+      left: 46px;
+      position: absolute;
+      content: "Подробнее";
+      @include font-header;
+      color: white;
+
+      @media (max-width: 494px) {
+        top: 34%;
+        left: 41%;
+      }
+
+      @media (max-width: 412px) {
+        top: 34%;
+        left: 38%;
+      }
+
+      @media (max-width: 320px) {
+        top: 34%;
+        left: 36%;
+      }
+    }
+
+    &::before {
+      position: relative;
+      left: -100%;
+      content: "";
+      display: block;
+      width: 180px;
+      height: 50px;
+      transition: .5s;
+      background-color: $color-hover-button;
+    }
+
+    &:hover:before {
+      left: 0;
+    }
+  }
+
+  &__bike-name {
+    @include font-text;
+    display: block;
+    line-height: $font-height-heading;
+    margin: 167px 0 0;
+    position: relative;
+
+    &::after {
+      position: absolute;
+      top: -4px;
+      content: url('../../../images/line.svg');
+      margin-left: 30px;
+    }
+
+    @media (max-width: 1040px) {
+      display: none;
+    }
+
+    &_theme_dark {
+      color: #fff;
+
+      &::after {
+        content: url('../../../images/line-dark.svg');
+      }
+    }
+  }
+
+  &__images {
+    position: relative;
+    padding-left: 30px;
+  }
+
+  &__image-sticky-wrapper {
+    position: absolute;
+    height: 430px;
+    top: 320px;
+    left: -180px;
+
+    @media (max-width: 1288px) {
+      left: -120px;
+    }
+
+    @media (max-width: 1163px) {
+      left: -80px;
+      top: 280px;
+    }
+
+    @media (max-width: 640px) {
+      left: 0;
+    }
+
+    @media (max-width: 590px) {
+      left: 0;
+      top: 240px;
+    }
+
+    @media (max-width: 540px) {
+      left: 0;
+      top: 180px;
+    }
+
+    @media (max-width: 494px) {
+      left: 0;
+      top: 100px;
+      height: 290px;
+    }
+
+    @media (max-width: 320px) {
+      left: 0;
+      top: 70px;
+    }
+  }
+
+  &__fixed-bike-picture-wrapper {
+    filter: drop-shadow(-20px 60px 220px rgba(0, 0, 0, 0.2));
+    background-color: $color-background;
+    border-radius: 20px;
+    width: 440px;
+    height: 300px;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 300px;
+    position: sticky;
+
+    @media (max-width: 640px) {
+      width: 234px;
+      height: 160px;
+    }
+
+    @media (max-width: 494px) {
+      top: 80px;
+    }
+  }
+
+  &__fixed-bike-picture {
+    border-radius: 20px;
+    max-width: 100%;
+
+    @media (max-width: 640px) {
+      width: 180px;
+      height: 138px;
+    }
+  }
+}
