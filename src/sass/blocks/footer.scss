@@ -2,9 +2,11 @@
   box-sizing: border-box;
   max-width: 1440px;
   width: 100%;
-  padding: 80px 0 60px 120px;
+  padding: 80px 120px 60px;
   background-color: $color-background-footer;
-
+  @media (max-width: 900px) {
+    padding: 60px 18px 16px;
+  }
   &__title {
     @include font-footer;
     max-width: 229px;
@@ -63,7 +65,7 @@
     padding: 0;
   }
 
-  &__copyright-switcher-wrapper {
+  &__wrapper {
     margin: 100px 0 0;
     max-width: 1200px;
     width: 100%;
@@ -72,6 +74,8 @@
   }
 
   &__copyright {
+    display: flex;
+    align-items: center;
     margin: 0;
     font-size: $font-size-heading;
     font-weight: $font-weight-semi-bold;

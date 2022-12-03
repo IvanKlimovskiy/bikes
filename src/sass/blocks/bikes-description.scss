@@ -17,7 +17,7 @@
     margin: 0;
     @include font-title;
 
-    @media (max-width: 494px) {
+    @media (max-width: 690px) {
       @include font-title-mobile;
     }
   }
