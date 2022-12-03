@@ -71,7 +71,7 @@
               <div class="itc-slider__item itc-slider__item_display_mobile">
                 <div class="bikes-description__heading-wrapper">
                   <h2 class="bikes-description__title">Шоссе</h2>
-                  <div class="itc-slider__btns-wrapper">
+                  <div class="itc-slider__btns-wrapper itc-slider__btns-wrapper_display_mobile">
                     <button class="itc-slider__btn itc-slider__btn_size_small itc-slider__btn_prev"></button>
                     <button class="itc-slider__btn itc-slider__btn_size_small itc-slider__btn_next"></button>
                   </div>
@@ -89,7 +89,7 @@
               <div class="itc-slider__item itc-slider__item_display_mobile">
                 <div class="bikes-description__heading-wrapper">
                   <h2 class="bikes-description__title">Грэвел</h2>
-                  <div class="itc-slider__btns-wrapper">
+                  <div class="itc-slider__btns-wrapper itc-slider__btns-wrapper_display_mobile">
                     <button class="itc-slider__btn itc-slider__btn_size_small itc-slider__btn_prev"></button>
                     <button class="itc-slider__btn itc-slider__btn_size_small itc-slider__btn_next"></button>
                   </div>
@@ -107,7 +107,7 @@
               <div class="itc-slider__item itc-slider__item_display_mobile">
                 <div class="bikes-description__heading-wrapper">
                   <h2 class="bikes-description__title">ТТ</h2>
-                  <div class="itc-slider__btns-wrapper">
+                  <div class="itc-slider__btns-wrapper itc-slider__btns-wrapper_display_mobile">
                     <button class="itc-slider__btn itc-slider__btn_size_small itc-slider__btn_prev"></button>
                     <button class="itc-slider__btn itc-slider__btn_size_small itc-slider__btn_next"></button>
                   </div>
@@ -129,21 +129,23 @@
           </div>
         </div>
       </section>
-      <!--<section class="bikes-gallery">
-        <h2 class="bikes-gallery__title">Велосипеды</h2>
+      <section class="bikes-gallery">
         <div class="itc-slider" data-slider="itc-slider">
-          <ol class="itc-slider__indicators itc-slider__indicators_position_static">
-            <li class="itc-slider__indicator itc-slider__indicator_size_big" data-slide-to="0">Шоссе</li>
-            <li class="itc-slider__indicator itc-slider__indicator_size_big" data-slide-to="1">Грэвел</li>
-            <li class="itc-slider__indicator itc-slider__indicator_size_big" data-slide-to="2">TT</li>
-          </ol>
+          <div class="bikes-gallery__indicators-title-wrapper">
+            <h2 class="bikes-gallery__title">Велосипеды</h2>
+            <ol class="itc-slider__indicators itc-slider__indicators_position_top">
+              <li class="itc-slider__indicator itc-slider__indicator_position_top" data-slide-to="0">Шоссе</li>
+              <li class="itc-slider__indicator itc-slider__indicator_position_top" data-slide-to="1">Грэвел</li>
+              <li class="itc-slider__indicator itc-slider__indicator_position_top" data-slide-to="2">TT</li>
+            </ol>
+          </div>
           <div class="itc-slider__wrapper">
             <div class="itc-slider__items">
               <div class="itc-slider__item">
                 <div class="bikes-gallery__images-wrapper">
                   <a target="_blank" class="bikes-gallery__bikes-card-link"
                     href="https://www.sigmasports.com/item/Cervelo/Caledonia-5-Ultegra-Disc-Road-Bike-2021/RDEN">
-                    <figure class="bikes-gallery__bikes-card">
+                    <figure class="bikes-gallery__bikes-card">  
                       <div class="bikes-gallery__image-wrapper"><img class="bikes-gallery__image" src="./images/highway-bike1.jpg" alt="Cervelo Caledonia-5"></div>
                       <figcaption class="bikes-gallery__name">Cervelo Caledonia-5</figcaption>
                     </figure>
@@ -219,8 +221,9 @@
               </div>
             </div>
           </div>
+        </div>
       </section>
-      <section class="workouts">
+       <section class="workouts">
         <div class="workouts__text-box">
           <h2 class="workouts__title">Тренировки</h2>
           <p class="workouts__text">Чтобы найти маршрут для тренировки можно воспользоваться сервисом Komoot, а записать
@@ -233,7 +236,7 @@
         <img src="./images/workout-pic.jpg" alt="Шоссе" class="workouts__image">
       </section>
     </main>
-    <footer class="footer">
+    <!-- <footer class="footer">
       <h3 class="footer__title">Подпишитесь на рассылку —</h3>
       <form action="post" class="footer__form">
         <input class="footer__input-email" type="email" placeholder="Ваш e-mail">
@@ -247,8 +250,8 @@
           <img src="./images/dark.svg" alt="Значок тёмной темы" class="switcher__dark">
         </div>
       </div>
-    </footer> --> 
-  </div>
+    </footer>  -->
+   </div>
   <script src="./vendor/slider/slider.js"></script>
   <script src="./src/scripts/script.js"></script>
 </body>

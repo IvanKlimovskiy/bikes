@@ -1,11 +1,24 @@
 .itc-slider {
   &__indicators {
-    &_position_static {
-      bottom: 480px;
-      justify-content: flex-end;
-      margin: 0;
+    &_position_top {
+      position: static;
+      align-items: flex-end;
       @include font-link;
       font-weight: $font-weight-regular;
+      margin: 0 120px 0 0;
+
+      @media (max-width: 900px) {
+        margin: 0 18px 0 0;
+      }
+
+      @media (max-width: 540px) {
+        justify-content: flex-start;
+        margin: 0 0 0 18px;
+      }
+    }
+
+    &_position_bottom {
+      position: static;
     }
   }
 
@@ -52,7 +65,7 @@
   }
 
   &__indicator {
-    &_size_big {
+    &_position_top {
       display: flex;
       align-items: center;
       justify-content: center;
@@ -67,9 +80,10 @@
       &:hover {
         opacity: .6;
       }
+
     }
 
-    &_size_big:last-child {
+    &_position_top:last-child {
       margin: 0;
     }
 
@@ -80,6 +94,22 @@
 
       &:hover {
         opacity: 1;
+      }
+
+      @media (max-width: 540px) {
+        background-color: $color-background;
+      }
+
+    }
+
+    &_position_bottom {
+      display: none;
+      @media (max-width: 540px) {
+        display: block;
+        background-color: #CACACA;
+        width: 4px;
+        height: 3px;
+        border-radius: 50%;
       }
     }
   }
