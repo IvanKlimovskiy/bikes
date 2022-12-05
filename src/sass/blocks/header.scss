@@ -19,7 +19,7 @@
     cursor: pointer;
 
     &::after {
-      content: url('../../../images/burger-menu.svg');
+      content: url('../images/burger-menu.svg');
       width: 22px;
       height: 18px;
       display: block;
@@ -31,7 +31,7 @@
 
     &_theme_dark {
       &::after {
-        content: url('../../../images/burger-menu-dark-theme.svg');
+        content: url('../images/burger-menu-dark-theme.svg');
       }
     }
   }

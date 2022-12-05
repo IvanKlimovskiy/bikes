@@ -35,6 +35,7 @@ Array.from(switcher).forEach((el) => {
     if (e.target.checked) {
       mainPage.classList.add("page_theme_dark");
       menuBurger.classList.add("header__burger-menu_theme_dark");
+      buttonCloseNavigationMenu.classList.add("nav-menu__close-button_theme_dark");
       Array.from(navigationMenuLinks).forEach((el) => {
         el.classList.add("nav-menu__link_theme_dark");
       });
@@ -89,6 +90,7 @@ Array.from(switcher).forEach((el) => {
     } else {
       mainPage.classList.remove("page_theme_dark");
       menuBurger.classList.remove("header__burger-menu_theme_dark");
+      buttonCloseNavigationMenu.classList.remove("nav-menu__close-button_theme_dark");
       Array.from(navigationMenuLinks).forEach((el) => {
         el.classList.remove("nav-menu__link_theme_dark");
       });

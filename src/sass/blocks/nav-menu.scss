@@ -25,7 +25,7 @@
     @media (max-width: 640px) {
       display: block;
       background-color: rgba(white, 0);
-      background-image: url('../../../images/close-button.svg');
+      background-image: url('../images/close-button.svg');
       width: 44px;
       height: 44px;
       background-size: 100%;
@@ -36,7 +36,7 @@
     }
 
     &_theme_dark {
-      background-image: url('../../../images/close-button-dark-theme.svg');
+      background-image: url('../images/close-button-dark-theme.svg');
     }
   }
 

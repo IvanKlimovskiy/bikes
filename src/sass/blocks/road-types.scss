@@ -1,0 +1,30 @@
+.road-types {
+  padding: 60px 0 60px 120px;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 1440px;
+  display: grid;
+  grid-template-rows: repeat(4, minmax(min-content, max-content));
+
+  &__title {
+    margin: 0;
+    @include font-title;
+  }
+
+  &__text {
+    margin: 50px 0 0;
+    max-width: 460px;
+    @include font-text;
+  }
+
+  &__images {
+    margin: 80px 0 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 18px;
+  }
+
+  &__image {
+    display: block; 
+  }
+}
