@@ -1,0 +1,128 @@
+.footer {
+  box-sizing: border-box;
+  max-width: 1440px;
+  width: 100%;
+  padding: 80px 120px 60px;
+  background-color: $color-background-footer;
+
+  @media (max-width: 900px) {
+    padding: 60px 18px 16px;
+  }
+
+  &__title {
+    @include font-footer;
+    max-width: 229px;
+
+    &_theme_dark {
+      color: #fff;
+    }
+  }
+
+  &__form {
+    display: flex;
+    border: 1px solid rgba(#C7C7C7, .5);
+    max-width: 360px;
+    max-height: 50px;
+    justify-content: space-between;
+    border-radius: 4px;
+
+    &:focus-within {
+      border: 1px solid rgba(#C7C7C7, 1);
+    }
+
+    &_theme_dark {
+      border: 1px solid rgba(#7D7D7D, .5);
+
+      &:focus-within {
+        border: 1px solid rgba(#7D7D7D, 1);
+      }
+    }
+  }
+
+  &__input-email {
+    width: 100%;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 28px;
+    border-radius: 4px;
+    box-sizing: border-box;
+    padding: 10px 0 10px 20px;
+    border: none;
+    background-color: $color-background-footer;
+    outline: none;
+    display: block;
+    margin: 0;
+
+    &:focus~.footer__submit-button {
+      background: rgba($color: #fff, $alpha: 0);
+      display: block;
+    }
+
+    &:focus::placeholder {
+      visibility: hidden;
+    }
+
+    &::placeholder {
+      opacity: .7;
+    }
+
+    &:hover::placeholder {
+      color: $color-title;
+      opacity: 1;
+    }
+
+    &_theme_dark {
+      background-color: $color-background-footer-dark;
+
+      &::placeholder {
+        color: #fff;
+      }
+
+      &:hover::placeholder {
+        color: #fff;
+        opacity: 1;
+      }
+
+      &:focus~.footer__submit-button {
+        background: rgba($color: #fff, $alpha: 0);
+        color: #fff;
+        display: block;
+      }
+    }
+  }
+
+  &__submit-button {
+    cursor: pointer;
+    display: none;
+    border: none;
+    margin: 0 22px 0 0;
+    padding: 0;
+  }
+
+  &__wrapper {
+    margin: 100px 0 0;
+    max-width: 1200px;
+    width: 100%;
+    justify-content: space-between;
+    display: flex;
+  }
+
+  &__copyright {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    font-size: $font-size-heading;
+    font-weight: $font-weight-semi-bold;
+    color: $color-grey-footer-text;
+    line-height: 19.6px;
+
+    &_theme_dark {
+      color: #565656;
+    }
+  }
+
+  &_theme_dark {
+    background-color: $color-background-footer-dark;
+  }
+}

@@ -1,0 +1,48 @@
+@mixin font-header {
+  font-weight: $font-weight-medium;
+  font-size: $font-size-heading;
+  line-height: $font-height-heading;
+  color: $color-title;
+}
+
+@mixin font-title {
+  font-weight: $font-weight-bold;
+  font-size: $font-size-title;
+  line-height: $font-height-title;
+  color: $color-title;
+}
+
+@mixin font-title-mobile {
+  font-weight: $font-weight-bold;
+  font-size: $font-size-title-mobile;
+  line-height: $font-height-title-mobile;
+  color: $color-title;
+}
+
+@mixin font-text {
+  font-weight: $font-weight-regular;
+  font-size: $font-size-text;
+  line-height: $font-height-text;
+  color: $color-subtitle;
+}
+
+@mixin font-text-mobile {
+  font-weight: $font-weight-regular;
+  font-size: $font-size-text-mobile;
+  line-height: $font-height-text-mobile;
+  color: $color-subtitle;
+}
+
+@mixin font-link {
+  font-weight: $font-weight-semi-bold;
+  font-size: $font-size-text;
+  line-height: $font-height-text;
+  color: $color-title;
+}
+
+@mixin font-footer {
+  font-weight: $font-weight-semi-bold;
+  font-size: $font-size-footer;
+  line-height: $font-height-footer;
+  color: $color-title;
+}
